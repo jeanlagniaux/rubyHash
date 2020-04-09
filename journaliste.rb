@@ -7,13 +7,13 @@ end
 puts "il y a = '#{getLength(array)}' journaliste dans la liste"
 
 def getNumberOfNumber(array)
-       count = 0
-      	 array.each do |item|
-			if item =~ /\d/
-    			count += 1
-    		end
-		end
-		return count
+    count = 0
+    array.each do |item|
+		if item =~ /\d/
+    		count += 1
+    	end
+	end
+	return count
 end
 
 puts "il y a = '#{getNumberOfNumber(array)}'  journaliste avec un chiffre dans leur nom dans la liste"
@@ -87,6 +87,4 @@ def arrayWhereIsEpenser(array, nom)
   end
 
 puts " epenser est a la position = #{arrayWhereIsEpenser(array, "@epenser")}"
-
-
 
